@@ -17,4 +17,6 @@ const getAllCats = (req,res) => {
     });
 }
 
+//todo deleteCat
+
 module.exports = {postCat,getAllCats}
