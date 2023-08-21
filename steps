@@ -1,3 +1,10 @@
+
+- D task, so it means:
+	- no code from me
+
+- q's regarding p5 and p6
+
+
 0. what is unit test, and why it is important
     - frontend / backend testing
 1. create a new repo by importing the previous week's
@@ -12,7 +19,6 @@
     - at least 1 for GET
     - at least 1 for POST
         - POST MUST have a rollback mechnism
-
 
 
 Show:
