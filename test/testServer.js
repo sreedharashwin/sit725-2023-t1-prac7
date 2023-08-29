@@ -6,9 +6,8 @@ let cat = {paht:'',title:''}
 
 describe('test GET api', function(){
     it('returns statusCode of 200', function(done){
-        request(url, function(a,b,c){ //talk about callback arguments, and its names
-            console.log(arguments);
-            let responseObj = JSON.parse(c); // talk about going through them and find the right one
+        request(url, function(a,b,c){
+            let responseObj = JSON.parse(c);
             expect(responseObj.statusCode).to.equal(200);
             done();
         });
