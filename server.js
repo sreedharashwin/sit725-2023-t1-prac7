@@ -13,14 +13,14 @@ app.use(express.urlencoded({extended: false}));
 app.use('/api/cat',router);
 
 io.on('connection',(socket)=>{
-    console.log('something');
+    console.log('User connected!');
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });
 
     setInterval(()=>{
         socket.emit('number', parseInt(Math.random()*10));
-    }, 1000)
+    }, 30000)
 });
 
 http.listen(port, ()=>{
